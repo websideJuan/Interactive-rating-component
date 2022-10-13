@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-LightGrey: hsl(217, 12%, 63%); /*Light Grey*/ 
+    --color-MediumGrey: hsl(216, 12%, 54%); /*Medium Grey*/
+    --color-DarkBlue: hsl(213, 19%, 18%); /*Dark Blue*/
+    --color-VeryDarkBlue: hsl(216, 12%, 8%); /*Very Dark Blue*/
+    --color-Orange: hsl(25, 97%, 53%); /*Orange*/
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+.d-none{
+    display: none;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-VeryDarkBlue);
+}
+
+.textTitle{
+    color: hsl(0, 0%, 100%); 
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+.container {
+    background-color: gray;
+    width: 90%;
+    max-width: 360px;
+    height: 370px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: var(--color-DarkBlue);
+}
+
+.flexDinamic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 20px 0;
+    text-align: center;
+}
+
+.textDinamic{
+    border-radius: 15px;
+    padding:5px 10px;
+    color: var(--color-Orange);
+    background-color: hsla(0, 0%, 100%, 0.031);
+}
+
+.imgStart{
+    background-color: hsla(0, 0%, 100%, 0.031); 
+    margin: 35px 0 20px 20px;
+    border-radius: 40px;
+    padding: 12px;
+}
+
+.paragraph{
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: var(--color-LightGrey);
+}
+
+.form_event{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+    padding-bottom: 10px;
+}
+
+.btnActivate{
+    background-color: var(--color-Orange);
+}
+
+.form__number{
+    background-color: hsla(0, 0%, 100%, 0.031); 
+    width: 45px;
+    padding: 13px;
+    border-radius: 999px;
+    text-align: center;
+    transition: background-color .3s ;
+    color: white;
+}
+
+.activate{
+    background-color: var(--color-LightGrey) !important;
+}
+
+.form__number:hover{
+    background-color: var(--color-Orange);
+    cursor: pointer;
+}
+
+.form__number:active{
+    background-color: var(--color-Orange);
+}
+
+button {
+    cursor: pointer;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--color-Orange);
+}
+
+button:hover{
+    background-color: white;
+    color: var(--color-Orange);
+}
